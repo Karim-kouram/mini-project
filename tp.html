@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Coursera</title>
+    <style>
+        /* Réinitialisation des marges intérieures et extérieures */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styles généraux */
+        html, body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: #fff;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: blue;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .search-box {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .buttons .explorer {
+            background-color: #007bff;
+        }
+
+        .buttons .s-inscrire {
+            background-color: #28a745;
+        }
+
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+
+        /* Article */
+        article {
+            width: 80%;
+            height: 150px;
+            margin: 20px 0;
+            background-color: cornflowerblue;
+            color: gray;
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        article h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Image */
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Version mobile */
+        @media (max-width: 868px) {
+            header {
+                padding: 0 10px;
+                flex-direction: column;
+                height:20%;
+            }
+            .buttons .explorer,.buttons .s-inscrire{
+                margin-top: 5px;
+            }
+
+            /* Masquer tout sauf le logo et le menu */
+            
+
+            .menu-icon {
+                display: block;
+            }
+
+            .logo {
+                flex-grow: 1;
+                text-align: center;
+            }
+
+            .menu-icon img {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+        }
+
+        /* Icône du menu masquée par défaut */
+        .menu-icon {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Coursera</h1>
+        </div>
+        <nav>
+            <a href="#">Rechercher des carrières</a>
+            <a href="#">Connexion</a>
+            <input type="text" class="search-box" placeholder="Recherche...">
+            <select>
+                <option>Certification</option>
+                <option>Diplôme en ligne</option>
+                <option>Master</option>
+            </select>
+        </nav>
+        <div class="buttons">
+            <button class="explorer">Explorer</button>
+            <button class="s-inscrire">S'inscrire</button>
+        </div>
+        <div class="menu-icon">
+            <img src="images.png" alt="Menu">
+        </div>
+    </header>
+    <article>
+        <h2>Accès illimité à plus de 7 000 cours</h2>
+        <p>Explorez des projets pratiques et des diplômes reconnus sur le marché du travail.</p>
+        <a href="#">En savoir plus</a>
+    </article>
+    <div class="image-container">
+        <img src="istockphoto-1390066370-612x612.jpg" alt="">
+    </div>
+</body>
+</html>

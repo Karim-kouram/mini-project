@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+
+header{
+    background-color:violet;
+    height: 60px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.lc{
+    background-color: black;
+    color: white;
+}
+.re{
+    width:300px;
+}
+.gg{
+    display: flex;
+    height: 75vh;
+}
+.a{
+    background-color: white;
+    width: 80%;
+    margin-right: 10px;
+    font-family:cursive;
+    border-radius:0 10px 10px 0;
+}
+.z{
+    background-color:violet;
+    width: 20%;
+    border-radius: 10px 0 0 10px;
+}
+.x{
+    background-color:white;
+    padding: 20px;
+    margin-top: 10px;
+}
+body{
+    background-color: gray;
+}
